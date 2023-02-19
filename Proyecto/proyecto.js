@@ -1,6 +1,7 @@
 //Variables utiles 
 //Precio base de la cotización, en quetzales, lo puede cambiar
 var precio_base = 2000;
+var mayor_edad = 18;
 var continuar = "si";
 //Valores de los recargos 
 var edad_18 = 0.1;
@@ -30,7 +31,7 @@ while(continuar != "salir")
     var edad = prompt("¿Cuantos años tiene? Ingrese solamente números");
     var edad_numero = parseInt(edad);
     //Comprobamos si es mayor de edad
-    if(edad_numero >= 18)
+    if(edad_numero >= mayor_edad)
     {
         var casado = prompt("¿Está casado actualmente?","si/no");
         var edad_conyuge;
