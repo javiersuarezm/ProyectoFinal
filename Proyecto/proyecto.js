@@ -3,6 +3,7 @@
 var precio_base = 2000;
 var mayor_edad = 18;
 var continuar = "si";
+var contador = 0;
 //Valores de los recargos 
 var edad_18 = 0.1;
 var edad_25 = 0.2;
@@ -119,4 +120,6 @@ while(continuar != "salir")
         alert(nombre+"\nTiene que se mayor de edad, lo siento");
     }
     continuar = prompt("¿Desea Continuar?\n1. Continuar = 'si'\n2. Salir ='salir'","salir");
+    contador += 1;
 }
+alert("TK-U  | Hoy se realizaron: "+contador+" cotizaciones");
